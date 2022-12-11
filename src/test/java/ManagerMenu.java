@@ -19,18 +19,23 @@ public class ManagerMenu {
 		int choice = sc.nextInt();
 		if (choice == 1) {
 			FindManagerByManagerIdTest.findManagerByManagerId();
-			System.out.println("Returning manager's feature page");
+			System.out.println("\nReturning manager's feature page");
 			ManagerMenu.managerMenu();
 		} else if (choice == 2) {
 			UpdateManagerDetailsTest.updateManagerDetails();
+			System.out.println("\nReturning manager's feature page");
+			ManagerMenu.managerMenu();
 		} else if (choice == 3) {
 			FindAllEmployeeByManagerIdTest.findAllEmployeeByManagerId();
+			System.out.println("\nReturning manager's feature page");
+			ManagerMenu.managerMenu();
 
 		} else if (choice == 4) {
 			UpdateBookingDetailTest.updateBookingDetail();
+			System.out.println("\nReturning manager's feature page");
+			ManagerMenu.managerMenu();
 		} else if (choice == 5) {
-			System.out.println("Returning to the Home page");
-			System.exit(1);
+			System.out.println("\nReturning to the Home page");
 			CabBookingAppHome.home();
 		} else {
 			System.out.println("\nWrong input");

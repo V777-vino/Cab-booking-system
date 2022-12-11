@@ -18,18 +18,23 @@ public class EmployeeMenu {
 		int choice = sc.nextInt();
 		if (choice == 1) {
 			FindEmployeeByEmployeeIdTest.findEmployeeByEmployeeId();
-			System.out.println("Returning emploee's feature page");
+			System.out.println("\nReturning emploee's feature page");
 			EmployeeMenu.employeeMenu();
 		} else if (choice == 2) {
 			UpdateEmployeeDetailsTest.updateEmployeeDetails();
+			System.out.println("\nReturning emploee's feature page");
+			EmployeeMenu.employeeMenu();
 		} else if (choice == 3) {
 			FindBookingByBookingIdTest.findBookingByBookingId();
+			System.out.println("\nReturning emploee's feature page");
+			EmployeeMenu.employeeMenu();
 		} else if (choice == 4) {
 			FindBookingDetailsByManagerIdTest.findBookingDetailsByManagerId();
+			System.out.println("\nReturning emploee's feature page");
+			EmployeeMenu.employeeMenu();
 
 		} else if (choice == 5) {
 			System.out.println("Returning to the Home page");
-			System.exit(1);
 			CabBookingAppHome.home();
 		} else {
 			System.out.println("\nWrong input");
