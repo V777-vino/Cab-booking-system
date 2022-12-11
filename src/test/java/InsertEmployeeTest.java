@@ -17,7 +17,7 @@ public class InsertEmployeeTest {
 		String employeeName = sc.next();
 		System.out.println("Enter the employee email:");
 		String employeeEmail = sc.next();
-		System.out.println("Employee the email pasword:");
+		System.out.println("Enter the email pasword:");
 		String employeePassword = sc.next();
 		System.out.println("Enter the manager id:");
 		int managerIdentity = sc.nextInt();
