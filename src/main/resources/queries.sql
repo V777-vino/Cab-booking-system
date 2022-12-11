@@ -24,8 +24,11 @@ manager_password VARCHAR(20) NOT NULL);
 UPDATE manager SET manager_password ="pass7777" WHERE manager_id =2;
 
 SELECT*FROM manager;
+
 DROP TABLE manager;
+
 SELECT * FROM manager WHERE manager_id =1;
+
 INSERT INTO manager(manager_name,manager_email,manager_password)
 VALUES("raj","r@gmail.com","pass123");
 DELETE FROM manager WHERE manager_id = 2;
