@@ -10,8 +10,10 @@ admin_password VARCHAR(30) NOT NULL
 SELECT*FROM ADMIN;
 DROP TABLE ADMIN;
 
+SELECT *FROM ADMIN WHERE admin_id =1 AND admin_password ="pass123";
+
 INSERT INTO ADMIN(admin_name,admin_email,admin_password)
-VALUES("antony","a@gmail.com","pass123");
+VALUES("raj","r@gmail.com","pass123");
 
 CREATE TABLE manager(
 manager_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -62,10 +64,11 @@ CREATE TABLE booking(
 	cab_number INT
 	
 );
+SELECT *FROM booking;
 INSERT INTO booking(employee_id,src,destn,manager_id,approve,cab_number)
 VALUES(1,"thambaram","t.nagar",1,TRUE,1);
 
-SELECT*FROM booking;
+SELECT*FROM booking WHERE booking_id =1;
 DROP TABLE booking;
 
 SELECT*FROM ADMIN;
@@ -84,3 +87,4 @@ DESC cab;
 INSERT INTO cab(cab_name,seaters) VALUES ("maha cab",4);
 SELECT*FROM cab;
 DELETE FROM cab WHERE cab_number = 2;
+SELECT*FROM ADMIN;
